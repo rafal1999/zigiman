@@ -1,0 +1,71 @@
+\hypertarget{classPoint}{}\doxysection{Dokumentacja klasy Point}
+\label{classPoint}\index{Point@{Point}}
+
+
+{\ttfamily \#include $<$points.\+h$>$}
+
+Diagram dziedziczenia dla Point\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classPoint}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPoint_a886e1c3e0e1a2d41bbc5a18211956cca}\label{classPoint_a886e1c3e0e1a2d41bbc5a18211956cca}} 
+{\bfseries Point} (const sf\+::\+Texture \&\+\_\+texture, const sf\+::\+Vector2f \&\+\_\+position)
+\item 
+virtual void \mbox{\hyperlink{classPoint_a5201091198b4d0550df8ed6a87ac909d}{draw}} (sf\+::\+Render\+Window \&\+\_\+window) const
+\item 
+virtual bool \mbox{\hyperlink{classPoint_a005405135da411e7239eb6d33c7a8297}{check\+Collision}} (const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classPacman}{Pacman}} $>$ \&\+\_\+pacman)
+\item 
+\mbox{\Hypertarget{classPoint_a8da4ba947317f86a6305f217c1dba8aa}\label{classPoint_a8da4ba947317f86a6305f217c1dba8aa}} 
+virtual int {\bfseries return\+Point\+Value} () const =0
+\end{DoxyCompactItemize}
+\doxysubsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\doxysubsection{Opis szczegółowy}
+klasa bazowa dla punktu 
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{classPoint_a005405135da411e7239eb6d33c7a8297}\label{classPoint_a005405135da411e7239eb6d33c7a8297}} 
+\index{Point@{Point}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}}
+{\footnotesize\ttfamily virtual bool Point\+::check\+Collision (\begin{DoxyParamCaption}\item[{const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classPacman}{Pacman}} $>$ \&}]{\+\_\+pacman }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Zwraca}
+true jeśli była kolizja i zmienia status obiektu na D\+E\+AD 
+
+false jeśli nie było kolizji i nie zmienia statusu 
+\end{DoxyReturn}
+
+
+Reimplementowana w \mbox{\hyperlink{classBigPoint_ad92939d34de5d25461fd99af7415a392}{Big\+Point}} i \mbox{\hyperlink{classSmallPoint_af13046ac973de49c062d5493934f1b5b}{Small\+Point}}.
+
+\mbox{\Hypertarget{classPoint_a5201091198b4d0550df8ed6a87ac909d}\label{classPoint_a5201091198b4d0550df8ed6a87ac909d}} 
+\index{Point@{Point}!draw@{draw}}
+\index{draw@{draw}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Point\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{\+\_\+window }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+metoda rysuje sprite w oknie jeśli jest A\+L\+I\+VE 
+\begin{DoxyParams}{Parametry}
+{\em \mbox{[}in.\+out\mbox{]}} & \+\_\+window \\
+\hline
+\end{DoxyParams}
+
+
+Reimplementowana z \mbox{\hyperlink{classLiveObj_a9f5e615f9eeb097a80def51a37b5e0a3}{Live\+Obj}}.
+
+
+
+Reimplementowana w \mbox{\hyperlink{classBigPoint_a3d9c349fb89a3d8b046abb2a80582828}{Big\+Point}} i \mbox{\hyperlink{classSmallPoint_a7c6dabf75610817d4300055b6a5ec811}{Small\+Point}}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+header/\mbox{\hyperlink{points_8h}{points.\+h}}\end{DoxyCompactItemize}

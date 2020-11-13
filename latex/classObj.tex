@@ -1,0 +1,86 @@
+\hypertarget{classObj}{}\doxysection{Dokumentacja klasy Obj}
+\label{classObj}\index{Obj@{Obj}}
+
+
+{\ttfamily \#include $<$obj.\+h$>$}
+
+Diagram dziedziczenia dla Obj\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classObj}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classObj_acf747250fd127e397adaa994ed4ba827}{Obj}} (const sf\+::\+Texture \&\+\_\+texture, const sf\+::\+Vector2f \&\+\_\+position)
+\item 
+virtual void \mbox{\hyperlink{classObj_a727315a175246cdd35989abb0dfae724}{draw}} (sf\+::\+Render\+Window \&\+\_\+window) const
+\item 
+void \mbox{\hyperlink{classObj_ad5d02b82e25223c47420f73584467d62}{set\+Position}} (const sf\+::\+Vector2f \&\+\_\+position)
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{classObj_aa92d42885635aac8b724e598181b52d1}{get\+Position}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classObj_a8bfc23ab6e70fc0028e7cb94b0479491}\label{classObj_a8bfc23ab6e70fc0028e7cb94b0479491}} 
+sf\+::\+Sprite \mbox{\hyperlink{classObj_a8bfc23ab6e70fc0028e7cb94b0479491}{sprite}}
+\begin{DoxyCompactList}\small\item\em reprezentant obiektu \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+klasa \mbox{\hyperlink{classObj}{Obj}} jest klasa abstrakcyją podstawową dla wszyskich obiektów w grze 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{classObj_acf747250fd127e397adaa994ed4ba827}\label{classObj_acf747250fd127e397adaa994ed4ba827}} 
+\index{Obj@{Obj}!Obj@{Obj}}
+\index{Obj@{Obj}!Obj@{Obj}}
+\doxysubsubsection{\texorpdfstring{Obj()}{Obj()}}
+{\footnotesize\ttfamily Obj\+::\+Obj (\begin{DoxyParamCaption}\item[{const sf\+::\+Texture \&}]{\+\_\+texture,  }\item[{const sf\+::\+Vector2f \&}]{\+\_\+position }\end{DoxyParamCaption})}
+
+konstruktor tworzy obiekt i umieszcza w wskazanej pozycji 
+\begin{DoxyParams}{Parametry}
+{\em \+\_\+texture} & tekstura obiektu \\
+\hline
+{\em \+\_\+position} & pozycja obiektu startowa/stała \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{classObj_a727315a175246cdd35989abb0dfae724}\label{classObj_a727315a175246cdd35989abb0dfae724}} 
+\index{Obj@{Obj}!draw@{draw}}
+\index{draw@{draw}!Obj@{Obj}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Obj\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{\+\_\+window }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+metoda rysuje sprite w oknie 
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in,out}}  & {\em \+\_\+window} & okno w którym ma być rysowany sprite \\
+\hline
+\end{DoxyParams}
+
+
+Reimplementowana w \mbox{\hyperlink{classLiveObj_a9f5e615f9eeb097a80def51a37b5e0a3}{Live\+Obj}}, \mbox{\hyperlink{classBigPoint_a3d9c349fb89a3d8b046abb2a80582828}{Big\+Point}}, \mbox{\hyperlink{classSmallPoint_a7c6dabf75610817d4300055b6a5ec811}{Small\+Point}}, \mbox{\hyperlink{classCharacter_aff1dc680d540ef0b59c78bb4ba7a83ce}{Character}}, \mbox{\hyperlink{classGhost_ab5252a1fb8ef5083a422806f662c634e}{Ghost}}, \mbox{\hyperlink{classPoint_a5201091198b4d0550df8ed6a87ac909d}{Point}}, \mbox{\hyperlink{classPacman_a6f0663c2f5af940b137ba37720e7c7fe}{Pacman}} i \mbox{\hyperlink{classWall_a16131b1241d53cc546e517ccbc5f994b}{Wall}}.
+
+\mbox{\Hypertarget{classObj_aa92d42885635aac8b724e598181b52d1}\label{classObj_aa92d42885635aac8b724e598181b52d1}} 
+\index{Obj@{Obj}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Obj@{Obj}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Obj\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Zwraca}
+zwraca pozycje obiektu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classObj_ad5d02b82e25223c47420f73584467d62}\label{classObj_ad5d02b82e25223c47420f73584467d62}} 
+\index{Obj@{Obj}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Obj@{Obj}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Obj\+::set\+Position (\begin{DoxyParamCaption}\item[{const sf\+::\+Vector2f \&}]{\+\_\+position }\end{DoxyParamCaption})}
+
+ustawia bezwzględnie pozycje obiektu 
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+header/\mbox{\hyperlink{obj_8h}{obj.\+h}}\end{DoxyCompactItemize}

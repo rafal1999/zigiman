@@ -1,0 +1,142 @@
+\hypertarget{classCharacter}{}\doxysection{Dokumentacja klasy Character}
+\label{classCharacter}\index{Character@{Character}}
+
+
+{\ttfamily \#include $<$character.\+h$>$}
+
+Diagram dziedziczenia dla Character\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classCharacter}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCharacter_a8f1228398df7fa1b49e69e890aac89cd}{Character}} (const sf\+::\+Texture \&\+\_\+texture, const sf\+::\+Vector2f \+\_\+position)
+\item 
+virtual void \mbox{\hyperlink{classCharacter_aff1dc680d540ef0b59c78bb4ba7a83ce}{draw}} (sf\+::\+Render\+Window \&\+\_\+window) const
+\item 
+virtual sf\+::\+Float\+Rect \mbox{\hyperlink{classCharacter_afa3660f19930913b94b21e8e983e1142}{return\+Hit\+Box}} () const
+\item 
+virtual void \mbox{\hyperlink{classCharacter_a0a7bb0d7f088d98f458ff7193a862431}{resolve\+Collison}} ()
+\item 
+virtual void \mbox{\hyperlink{classCharacter_aa1ac73076e4b02d62d7f0bac4c3bdc98}{set\+Direction}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classCharacter_af5c5188c8391fcde9240b133331ef222}{move}} ()
+\item 
+virtual sf\+::\+Vector2f \mbox{\hyperlink{classCharacter_a74bce653de9c828aa0703f5945b7b763}{get\+Velocity}} () const
+\item 
+void \mbox{\hyperlink{classCharacter_a11ec9594b826b66256cc82e3e67c5cf5}{set\+Prev\+Velocity}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCharacter_ab1be10a2441d9fd85c0ad4829569cef6}\label{classCharacter_ab1be10a2441d9fd85c0ad4829569cef6}} 
+sf\+::\+Vector2f \mbox{\hyperlink{classCharacter_ab1be10a2441d9fd85c0ad4829569cef6}{velocity}}
+\begin{DoxyCompactList}\small\item\em prędkośc/kierunek \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCharacter_a00b530ba81c8bbdd0032ca1c7168b3d7}\label{classCharacter_a00b530ba81c8bbdd0032ca1c7168b3d7}} 
+sf\+::\+Vector2f \mbox{\hyperlink{classCharacter_a00b530ba81c8bbdd0032ca1c7168b3d7}{prev\+Velocity}}
+\begin{DoxyCompactList}\small\item\em przechowuję poprzednia prędkość/kierunek \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Statyczne atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCharacter_ae871c33ec6515527c6d2373a58eb0946}\label{classCharacter_ae871c33ec6515527c6d2373a58eb0946}} 
+static const int {\bfseries Speed} =4.\+0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+klasa postaci bazowa dla \mbox{\hyperlink{classGhost}{Ghost}} i \mbox{\hyperlink{classPacman}{Pacman}} 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{classCharacter_a8f1228398df7fa1b49e69e890aac89cd}\label{classCharacter_a8f1228398df7fa1b49e69e890aac89cd}} 
+\index{Character@{Character}!Character@{Character}}
+\index{Character@{Character}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{Character()}{Character()}}
+{\footnotesize\ttfamily Character\+::\+Character (\begin{DoxyParamCaption}\item[{const sf\+::\+Texture \&}]{\+\_\+texture,  }\item[{const sf\+::\+Vector2f}]{\+\_\+position }\end{DoxyParamCaption})}
+
+konstruktor 
+\begin{DoxyParams}{Parametry}
+{\em \+\_\+texture} & tekstura \\
+\hline
+{\em \+\_\+position} & pozycja startowa postaci \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{classCharacter_aff1dc680d540ef0b59c78bb4ba7a83ce}\label{classCharacter_aff1dc680d540ef0b59c78bb4ba7a83ce}} 
+\index{Character@{Character}!draw@{draw}}
+\index{draw@{draw}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Character\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{\+\_\+window }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+metoda rysuje sprite w oknie jeśli jest A\+L\+I\+VE 
+\begin{DoxyParams}{Parametry}
+{\em \mbox{[}in.\+out\mbox{]}} & \+\_\+window \\
+\hline
+\end{DoxyParams}
+
+
+Reimplementowana z \mbox{\hyperlink{classLiveObj_a9f5e615f9eeb097a80def51a37b5e0a3}{Live\+Obj}}.
+
+
+
+Reimplementowana w \mbox{\hyperlink{classGhost_ab5252a1fb8ef5083a422806f662c634e}{Ghost}} i \mbox{\hyperlink{classPacman_a6f0663c2f5af940b137ba37720e7c7fe}{Pacman}}.
+
+\mbox{\Hypertarget{classCharacter_a74bce653de9c828aa0703f5945b7b763}\label{classCharacter_a74bce653de9c828aa0703f5945b7b763}} 
+\index{Character@{Character}!getVelocity@{getVelocity}}
+\index{getVelocity@{getVelocity}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{getVelocity()}{getVelocity()}}
+{\footnotesize\ttfamily virtual sf\+::\+Vector2f Character\+::get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Zwraca}
+prędkość/kierunek 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCharacter_af5c5188c8391fcde9240b133331ef222}\label{classCharacter_af5c5188c8391fcde9240b133331ef222}} 
+\index{Character@{Character}!move@{move}}
+\index{move@{move}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily virtual void Character\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+powoduje zmianę położenia obiektu 
+
+Reimplementowana w \mbox{\hyperlink{classGhost_afa1fedf2269c2e37fffc70b534b7fa2d}{Ghost}} i \mbox{\hyperlink{classPacman_ae1bec55405d26d5a17ced50a96156be1}{Pacman}}.
+
+\mbox{\Hypertarget{classCharacter_a0a7bb0d7f088d98f458ff7193a862431}\label{classCharacter_a0a7bb0d7f088d98f458ff7193a862431}} 
+\index{Character@{Character}!resolveCollison@{resolveCollison}}
+\index{resolveCollison@{resolveCollison}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{resolveCollison()}{resolveCollison()}}
+{\footnotesize\ttfamily virtual void Character\+::resolve\+Collison (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+rozwiązuje kolizje \mbox{\Hypertarget{classCharacter_afa3660f19930913b94b21e8e983e1142}\label{classCharacter_afa3660f19930913b94b21e8e983e1142}} 
+\index{Character@{Character}!returnHitBox@{returnHitBox}}
+\index{returnHitBox@{returnHitBox}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{returnHitBox()}{returnHitBox()}}
+{\footnotesize\ttfamily virtual sf\+::\+Float\+Rect Character\+::return\+Hit\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Zwraca}
+gloabl\+Boudns-\/\char`\"{}ramki obiektu\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCharacter_aa1ac73076e4b02d62d7f0bac4c3bdc98}\label{classCharacter_aa1ac73076e4b02d62d7f0bac4c3bdc98}} 
+\index{Character@{Character}!setDirection@{setDirection}}
+\index{setDirection@{setDirection}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{setDirection()}{setDirection()}}
+{\footnotesize\ttfamily virtual void Character\+::set\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+metoda czysto wirtualna 
+
+Implementowany w \mbox{\hyperlink{classGhost_a027aee6de9ea93e3667157fc18a8500b}{Ghost}}, \mbox{\hyperlink{classGhostSprigginia_ae6f8bdaf75462d6cffad3d6bd02a8ed6}{Ghost\+Sprigginia}}, \mbox{\hyperlink{classGhostCasper_a1e8dacbac5c4d831657fe0a6110edc0f}{Ghost\+Casper}}, \mbox{\hyperlink{classGhostGuardian_a93e0164140ae173dcc0901e0c4e6243c}{Ghost\+Guardian}} i \mbox{\hyperlink{classPacman_ad4a7e2eda7f488632ed539170a894a3c}{Pacman}}.
+
+\mbox{\Hypertarget{classCharacter_a11ec9594b826b66256cc82e3e67c5cf5}\label{classCharacter_a11ec9594b826b66256cc82e3e67c5cf5}} 
+\index{Character@{Character}!setPrevVelocity@{setPrevVelocity}}
+\index{setPrevVelocity@{setPrevVelocity}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{setPrevVelocity()}{setPrevVelocity()}}
+{\footnotesize\ttfamily void Character\+::set\+Prev\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+ustawia poprzedni kierunek/prędkość 
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+header/\mbox{\hyperlink{character_8h}{character.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,48 @@
+\hypertarget{game_8h}{}\doxysection{Dokumentacja pliku header/game.h}
+\label{game_8h}\index{header/game.h@{header/game.h}}
+{\ttfamily \#include $<$S\+F\+M\+L/\+Graphics.\+hpp$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include \char`\"{}obj.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}character.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ghost.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}points.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}wall.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pacman.\+h\char`\"{}}\newline
+\doxysubsection*{Komponenty}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPointsCounter}{Points\+Counter}}
+\item 
+struct \mbox{\hyperlink{structMap}{Map}}
+\item 
+struct \mbox{\hyperlink{structTextures}{Textures}}
+\item 
+class \mbox{\hyperlink{classGame}{Game}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Wyliczenia}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{game_8h_a881b49e3802366255ad852f1c8624fd1}{Game\+Status}} \{ \mbox{\hyperlink{game_8h_a881b49e3802366255ad852f1c8624fd1a855520d2a5b0b1a64b939e7e30889e2a}{Game\+Status\+::\+R\+UN}}, 
+\mbox{\hyperlink{game_8h_a881b49e3802366255ad852f1c8624fd1a276f3dd80731d5a65a18ae304741a2c8}{Game\+Status\+::\+F\+I\+G\+HT}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja typów wyliczanych}
+\mbox{\Hypertarget{game_8h_a881b49e3802366255ad852f1c8624fd1}\label{game_8h_a881b49e3802366255ad852f1c8624fd1}} 
+\index{game.h@{game.h}!GameStatus@{GameStatus}}
+\index{GameStatus@{GameStatus}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{GameStatus}{GameStatus}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{game_8h_a881b49e3802366255ad852f1c8624fd1}{Game\+Status}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+enum słuząca do obsługi trybu gry \begin{DoxyEnumFields}{Wartości wyliczeń}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RUN@{RUN}!game.h@{game.h}}\index{game.h@{game.h}!RUN@{RUN}}}\mbox{\Hypertarget{game_8h_a881b49e3802366255ad852f1c8624fd1a855520d2a5b0b1a64b939e7e30889e2a}\label{game_8h_a881b49e3802366255ad852f1c8624fd1a855520d2a5b0b1a64b939e7e30889e2a}} 
+R\+UN&tryb ucieczki pacmana \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FIGHT@{FIGHT}!game.h@{game.h}}\index{game.h@{game.h}!FIGHT@{FIGHT}}}\mbox{\Hypertarget{game_8h_a881b49e3802366255ad852f1c8624fd1a276f3dd80731d5a65a18ae304741a2c8}\label{game_8h_a881b49e3802366255ad852f1c8624fd1a276f3dd80731d5a65a18ae304741a2c8}} 
+F\+I\+G\+HT&tryb walki pacmana \\
+\hline
+
+\end{DoxyEnumFields}

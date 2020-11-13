@@ -1,0 +1,76 @@
+\hypertarget{classGhostSprigginia}{}\doxysection{Dokumentacja klasy Ghost\+Sprigginia}
+\label{classGhostSprigginia}\index{GhostSprigginia@{GhostSprigginia}}
+
+
+{\ttfamily \#include $<$ghost.\+h$>$}
+
+Diagram dziedziczenia dla Ghost\+Sprigginia\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classGhostSprigginia}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGhostSprigginia_a37c6377c51296793ac021b245b382dff}\label{classGhostSprigginia_a37c6377c51296793ac021b245b382dff}} 
+{\bfseries Ghost\+Sprigginia} (sf\+::\+Texture \&\+\_\+texture, const sf\+::\+Vector2f \+\_\+position, sf\+::\+Color \+\_\+color)
+\item 
+virtual void \mbox{\hyperlink{classGhostSprigginia_ae6f8bdaf75462d6cffad3d6bd02a8ed6}{set\+Direction}} ()
+\item 
+virtual void \mbox{\hyperlink{classGhostSprigginia_a21a43664c588c5ef3ace77128256bc15}{set\+Position\+To\+Teleport}} (const sf\+::\+Vector2f \&\+\_\+position)
+\item 
+virtual void \mbox{\hyperlink{classGhostSprigginia_a2b197be6a24a98d756424936d49ac2d5}{teleport\+To}} (const sf\+::\+Vector2f \&\+\_\+velocity)
+\end{DoxyCompactItemize}
+\doxysubsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\doxysubsection{Opis szczegółowy}
+klasa duszka Sprigginia duszek posiada moc teleportowania sie w miejse które odwiedził pacman pod koniec czasu trwania supermocy (czyli gdy zjadł Big\+Pointa) pacmana 
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{classGhostSprigginia_ae6f8bdaf75462d6cffad3d6bd02a8ed6}\label{classGhostSprigginia_ae6f8bdaf75462d6cffad3d6bd02a8ed6}} 
+\index{GhostSprigginia@{GhostSprigginia}!setDirection@{setDirection}}
+\index{setDirection@{setDirection}!GhostSprigginia@{GhostSprigginia}}
+\doxysubsubsection{\texorpdfstring{setDirection()}{setDirection()}}
+{\footnotesize\ttfamily virtual void Ghost\+Sprigginia\+::set\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+ustawia kierunek 
+
+Reimplementowana z \mbox{\hyperlink{classGhostCasper_a1e8dacbac5c4d831657fe0a6110edc0f}{Ghost\+Casper}}.
+
+\mbox{\Hypertarget{classGhostSprigginia_a21a43664c588c5ef3ace77128256bc15}\label{classGhostSprigginia_a21a43664c588c5ef3ace77128256bc15}} 
+\index{GhostSprigginia@{GhostSprigginia}!setPositionToTeleport@{setPositionToTeleport}}
+\index{setPositionToTeleport@{setPositionToTeleport}!GhostSprigginia@{GhostSprigginia}}
+\doxysubsubsection{\texorpdfstring{setPositionToTeleport()}{setPositionToTeleport()}}
+{\footnotesize\ttfamily virtual void Ghost\+Sprigginia\+::set\+Position\+To\+Teleport (\begin{DoxyParamCaption}\item[{const sf\+::\+Vector2f \&}]{\+\_\+position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+ustawia pozycje do teleportu 
+\begin{DoxyParams}{Parametry}
+{\em \+\_\+position} & pozycja do której duszek bedzie się teleportował \\
+\hline
+\end{DoxyParams}
+
+
+Reimplementowana z \mbox{\hyperlink{classGhost_ac786b55e312bab11cfb960507c6240aa}{Ghost}}.
+
+\mbox{\Hypertarget{classGhostSprigginia_a2b197be6a24a98d756424936d49ac2d5}\label{classGhostSprigginia_a2b197be6a24a98d756424936d49ac2d5}} 
+\index{GhostSprigginia@{GhostSprigginia}!teleportTo@{teleportTo}}
+\index{teleportTo@{teleportTo}!GhostSprigginia@{GhostSprigginia}}
+\doxysubsubsection{\texorpdfstring{teleportTo()}{teleportTo()}}
+{\footnotesize\ttfamily virtual void Ghost\+Sprigginia\+::teleport\+To (\begin{DoxyParamCaption}\item[{const sf\+::\+Vector2f \&}]{\+\_\+velocity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+teleportuje duszka do wskazywanego miejsca 
+\begin{DoxyParams}{Parametry}
+{\em \+\_\+velocity} & prędkośc/kierunek jaką przyjmuje duszek po teleportacji i jest to kierunek/predkosc pacmana \\
+\hline
+\end{DoxyParams}
+
+
+Reimplementowana z \mbox{\hyperlink{classGhost_a0b525455b66569b1b77348569af05775}{Ghost}}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+header/\mbox{\hyperlink{ghost_8h}{ghost.\+h}}\end{DoxyCompactItemize}

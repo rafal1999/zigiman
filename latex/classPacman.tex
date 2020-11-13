@@ -1,0 +1,87 @@
+\hypertarget{classPacman}{}\doxysection{Dokumentacja klasy Pacman}
+\label{classPacman}\index{Pacman@{Pacman}}
+
+
+{\ttfamily \#include $<$pacman.\+h$>$}
+
+Diagram dziedziczenia dla Pacman\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classPacman}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPacman_a9152f3792661bbf88bb0e3c0fc0d7f2a}{Pacman}} (const sf\+::\+Texture \&\+\_\+texture, const sf\+::\+Vector2f \+\_\+position)
+\item 
+virtual void \mbox{\hyperlink{classPacman_a6f0663c2f5af940b137ba37720e7c7fe}{draw}} (sf\+::\+Render\+Window \&\+\_\+window) const
+\item 
+virtual void \mbox{\hyperlink{classPacman_ad4a7e2eda7f488632ed539170a894a3c}{set\+Direction}} ()
+\item 
+void \mbox{\hyperlink{classPacman_abf27847cc1ad35c88915640eaf7be7ca}{set\+Rotation}} ()
+\item 
+virtual void \mbox{\hyperlink{classPacman_ae1bec55405d26d5a17ced50a96156be1}{move}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\doxysubsection{Opis szczegółowy}
+klasa pacmana odpowiada za rysowanie, poruszanie, ustawianie kierunku i rotacji tekstury 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{classPacman_a9152f3792661bbf88bb0e3c0fc0d7f2a}\label{classPacman_a9152f3792661bbf88bb0e3c0fc0d7f2a}} 
+\index{Pacman@{Pacman}!Pacman@{Pacman}}
+\index{Pacman@{Pacman}!Pacman@{Pacman}}
+\doxysubsubsection{\texorpdfstring{Pacman()}{Pacman()}}
+{\footnotesize\ttfamily Pacman\+::\+Pacman (\begin{DoxyParamCaption}\item[{const sf\+::\+Texture \&}]{\+\_\+texture,  }\item[{const sf\+::\+Vector2f}]{\+\_\+position }\end{DoxyParamCaption})}
+
+konstruktor ustawia pozycję i teksture 
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{classPacman_a6f0663c2f5af940b137ba37720e7c7fe}\label{classPacman_a6f0663c2f5af940b137ba37720e7c7fe}} 
+\index{Pacman@{Pacman}!draw@{draw}}
+\index{draw@{draw}!Pacman@{Pacman}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Pacman\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{\+\_\+window }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+metoda rysuje sprite w oknie jeśli jest A\+L\+I\+VE 
+\begin{DoxyParams}{Parametry}
+{\em \mbox{[}in.\+out\mbox{]}} & \+\_\+window \\
+\hline
+\end{DoxyParams}
+
+
+Reimplementowana z \mbox{\hyperlink{classCharacter_aff1dc680d540ef0b59c78bb4ba7a83ce}{Character}}.
+
+\mbox{\Hypertarget{classPacman_ae1bec55405d26d5a17ced50a96156be1}\label{classPacman_ae1bec55405d26d5a17ced50a96156be1}} 
+\index{Pacman@{Pacman}!move@{move}}
+\index{move@{move}!Pacman@{Pacman}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily virtual void Pacman\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+metoda realizuje ruch pacmana oraz zapamiętuje poprzednią pozycję 
+
+Reimplementowana z \mbox{\hyperlink{classCharacter_af5c5188c8391fcde9240b133331ef222}{Character}}.
+
+\mbox{\Hypertarget{classPacman_ad4a7e2eda7f488632ed539170a894a3c}\label{classPacman_ad4a7e2eda7f488632ed539170a894a3c}} 
+\index{Pacman@{Pacman}!setDirection@{setDirection}}
+\index{setDirection@{setDirection}!Pacman@{Pacman}}
+\doxysubsubsection{\texorpdfstring{setDirection()}{setDirection()}}
+{\footnotesize\ttfamily virtual void Pacman\+::set\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+ustawia kieunek ruchu 
+
+Implementuje \mbox{\hyperlink{classCharacter_aa1ac73076e4b02d62d7f0bac4c3bdc98}{Character}}.
+
+\mbox{\Hypertarget{classPacman_abf27847cc1ad35c88915640eaf7be7ca}\label{classPacman_abf27847cc1ad35c88915640eaf7be7ca}} 
+\index{Pacman@{Pacman}!setRotation@{setRotation}}
+\index{setRotation@{setRotation}!Pacman@{Pacman}}
+\doxysubsubsection{\texorpdfstring{setRotation()}{setRotation()}}
+{\footnotesize\ttfamily void Pacman\+::set\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+metoda ustwia rotacje pacmana zaleznie od predkosci/kierunku obecnej i poprzedniej 
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+header/\mbox{\hyperlink{pacman_8h}{pacman.\+h}}\end{DoxyCompactItemize}

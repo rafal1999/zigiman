@@ -1,0 +1,175 @@
+\hypertarget{classGhost}{}\doxysection{Dokumentacja klasy Ghost}
+\label{classGhost}\index{Ghost@{Ghost}}
+
+
+{\ttfamily \#include $<$ghost.\+h$>$}
+
+Diagram dziedziczenia dla Ghost\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classGhost}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGhost_a03c4bda7023abeb4c88aeb0369433695}{Ghost}} (const sf\+::\+Texture \&\+\_\+texture, const sf\+::\+Vector2f \+\_\+position, sf\+::\+Color \+\_\+color)
+\item 
+void \mbox{\hyperlink{classGhost_aacf585f94483b232a3b641ba93e51e4e}{fear\+Ghost\+Color}} ()
+\item 
+void \mbox{\hyperlink{classGhost_ac630e1e6137231f21f8cfa741fa0d4ee}{angry\+Ghost\+Color}} ()
+\item 
+virtual void \mbox{\hyperlink{classGhost_ab5252a1fb8ef5083a422806f662c634e}{draw}} (sf\+::\+Render\+Window \&\+\_\+window) const
+\item 
+virtual bool \mbox{\hyperlink{classGhost_aab85c7c4e483496c43d75b298f9b8164}{check\+Collision}} (const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classPacman}{Pacman}} $>$ \&\+\_\+pacman)
+\item 
+virtual void \mbox{\hyperlink{classGhost_afa1fedf2269c2e37fffc70b534b7fa2d}{move}} ()
+\item 
+virtual void \mbox{\hyperlink{classGhost_a027aee6de9ea93e3667157fc18a8500b}{set\+Direction}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classGhost_ac786b55e312bab11cfb960507c6240aa}{set\+Position\+To\+Teleport}} (const sf\+::\+Vector2f \&\+\_\+position)
+\item 
+virtual void \mbox{\hyperlink{classGhost_a0b525455b66569b1b77348569af05775}{teleport\+To}} (const sf\+::\+Vector2f \&\+\_\+velocity)
+\item 
+int \mbox{\hyperlink{classGhost_a35243f761b07d9a5a107517ef9fbc4bc}{operator-\/-\/}} (int)
+\item 
+void \mbox{\hyperlink{classGhost_a0db0de8aa9409f89a79dfe9d78647927}{set\+Dead}} ()
+\item 
+void \mbox{\hyperlink{classGhost_a3d0102b29fc6c3ab51eeeef080746a4f}{fear\+Reaction}} ()
+\item 
+\mbox{\Hypertarget{classGhost_ab58af4b625e5c54cfd10a329f71be02d}\label{classGhost_ab58af4b625e5c54cfd10a329f71be02d}} 
+int {\bfseries return\+Ghostvalue} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Metody chronione}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGhost_a253f90e2f58e2ca3537a7d17e1e74e21}{set\+Random\+Direction}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\doxysubsection{Opis szczegółowy}
+klasa abstrkcyjna ducha 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{classGhost_a03c4bda7023abeb4c88aeb0369433695}\label{classGhost_a03c4bda7023abeb4c88aeb0369433695}} 
+\index{Ghost@{Ghost}!Ghost@{Ghost}}
+\index{Ghost@{Ghost}!Ghost@{Ghost}}
+\doxysubsubsection{\texorpdfstring{Ghost()}{Ghost()}}
+{\footnotesize\ttfamily Ghost\+::\+Ghost (\begin{DoxyParamCaption}\item[{const sf\+::\+Texture \&}]{\+\_\+texture,  }\item[{const sf\+::\+Vector2f}]{\+\_\+position,  }\item[{sf\+::\+Color}]{\+\_\+color }\end{DoxyParamCaption})}
+
+konstruktor ustawia pozycję, teksturę i kolor duszka 
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{classGhost_ac630e1e6137231f21f8cfa741fa0d4ee}\label{classGhost_ac630e1e6137231f21f8cfa741fa0d4ee}} 
+\index{Ghost@{Ghost}!angryGhostColor@{angryGhostColor}}
+\index{angryGhostColor@{angryGhostColor}!Ghost@{Ghost}}
+\doxysubsubsection{\texorpdfstring{angryGhostColor()}{angryGhostColor()}}
+{\footnotesize\ttfamily void Ghost\+::angry\+Ghost\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+ustawia kolor duszka gdy pacman ucieka \mbox{\Hypertarget{classGhost_aab85c7c4e483496c43d75b298f9b8164}\label{classGhost_aab85c7c4e483496c43d75b298f9b8164}} 
+\index{Ghost@{Ghost}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!Ghost@{Ghost}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}}
+{\footnotesize\ttfamily virtual bool Ghost\+::check\+Collision (\begin{DoxyParamCaption}\item[{const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classPacman}{Pacman}} $>$ \&}]{\+\_\+pacman }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+sprawdza kolizje z pacmanem \begin{DoxyReturn}{Zwraca}
+true jesli nastapiła kolizja 
+
+false jesli kolizja nie wystąpiła 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGhost_ab5252a1fb8ef5083a422806f662c634e}\label{classGhost_ab5252a1fb8ef5083a422806f662c634e}} 
+\index{Ghost@{Ghost}!draw@{draw}}
+\index{draw@{draw}!Ghost@{Ghost}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Ghost\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{\+\_\+window }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+metoda rysuje sprite w oknie jeśli jest A\+L\+I\+VE 
+\begin{DoxyParams}{Parametry}
+{\em \mbox{[}in.\+out\mbox{]}} & \+\_\+window \\
+\hline
+\end{DoxyParams}
+
+
+Reimplementowana z \mbox{\hyperlink{classCharacter_aff1dc680d540ef0b59c78bb4ba7a83ce}{Character}}.
+
+\mbox{\Hypertarget{classGhost_aacf585f94483b232a3b641ba93e51e4e}\label{classGhost_aacf585f94483b232a3b641ba93e51e4e}} 
+\index{Ghost@{Ghost}!fearGhostColor@{fearGhostColor}}
+\index{fearGhostColor@{fearGhostColor}!Ghost@{Ghost}}
+\doxysubsubsection{\texorpdfstring{fearGhostColor()}{fearGhostColor()}}
+{\footnotesize\ttfamily void Ghost\+::fear\+Ghost\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+ustawia kolor duszka gdy pacman walczy \mbox{\Hypertarget{classGhost_a3d0102b29fc6c3ab51eeeef080746a4f}\label{classGhost_a3d0102b29fc6c3ab51eeeef080746a4f}} 
+\index{Ghost@{Ghost}!fearReaction@{fearReaction}}
+\index{fearReaction@{fearReaction}!Ghost@{Ghost}}
+\doxysubsubsection{\texorpdfstring{fearReaction()}{fearReaction()}}
+{\footnotesize\ttfamily void Ghost\+::fear\+Reaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+reakcja duszków na zjedzenie Big\+Pointa przez pacmana \mbox{\Hypertarget{classGhost_afa1fedf2269c2e37fffc70b534b7fa2d}\label{classGhost_afa1fedf2269c2e37fffc70b534b7fa2d}} 
+\index{Ghost@{Ghost}!move@{move}}
+\index{move@{move}!Ghost@{Ghost}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily virtual void Ghost\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+przesuwa duszka 
+
+Reimplementowana z \mbox{\hyperlink{classCharacter_af5c5188c8391fcde9240b133331ef222}{Character}}.
+
+\mbox{\Hypertarget{classGhost_a35243f761b07d9a5a107517ef9fbc4bc}\label{classGhost_a35243f761b07d9a5a107517ef9fbc4bc}} 
+\index{Ghost@{Ghost}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!Ghost@{Ghost}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}}
+{\footnotesize\ttfamily int Ghost\+::operator-\/-\/ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+dekrementuje czas, kiedy duszek jest martwy \mbox{\Hypertarget{classGhost_a0db0de8aa9409f89a79dfe9d78647927}\label{classGhost_a0db0de8aa9409f89a79dfe9d78647927}} 
+\index{Ghost@{Ghost}!setDead@{setDead}}
+\index{setDead@{setDead}!Ghost@{Ghost}}
+\doxysubsubsection{\texorpdfstring{setDead()}{setDead()}}
+{\footnotesize\ttfamily void Ghost\+::set\+Dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+ustawia status na D\+E\+AD i ustawia czas bycia martwym \mbox{\Hypertarget{classGhost_a027aee6de9ea93e3667157fc18a8500b}\label{classGhost_a027aee6de9ea93e3667157fc18a8500b}} 
+\index{Ghost@{Ghost}!setDirection@{setDirection}}
+\index{setDirection@{setDirection}!Ghost@{Ghost}}
+\doxysubsubsection{\texorpdfstring{setDirection()}{setDirection()}}
+{\footnotesize\ttfamily virtual void Ghost\+::set\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+metoda czysto wirtualna 
+
+Implementuje \mbox{\hyperlink{classCharacter_aa1ac73076e4b02d62d7f0bac4c3bdc98}{Character}}.
+
+
+
+Implementowany w \mbox{\hyperlink{classGhostSprigginia_ae6f8bdaf75462d6cffad3d6bd02a8ed6}{Ghost\+Sprigginia}}, \mbox{\hyperlink{classGhostCasper_a1e8dacbac5c4d831657fe0a6110edc0f}{Ghost\+Casper}} i \mbox{\hyperlink{classGhostGuardian_a93e0164140ae173dcc0901e0c4e6243c}{Ghost\+Guardian}}.
+
+\mbox{\Hypertarget{classGhost_ac786b55e312bab11cfb960507c6240aa}\label{classGhost_ac786b55e312bab11cfb960507c6240aa}} 
+\index{Ghost@{Ghost}!setPositionToTeleport@{setPositionToTeleport}}
+\index{setPositionToTeleport@{setPositionToTeleport}!Ghost@{Ghost}}
+\doxysubsubsection{\texorpdfstring{setPositionToTeleport()}{setPositionToTeleport()}}
+{\footnotesize\ttfamily virtual void Ghost\+::set\+Position\+To\+Teleport (\begin{DoxyParamCaption}\item[{const sf\+::\+Vector2f \&}]{\+\_\+position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+metoda konieczna aby zachować hierarchię klas ~\newline
+ 
+
+Reimplementowana w \mbox{\hyperlink{classGhostSprigginia_a21a43664c588c5ef3ace77128256bc15}{Ghost\+Sprigginia}}.
+
+\mbox{\Hypertarget{classGhost_a253f90e2f58e2ca3537a7d17e1e74e21}\label{classGhost_a253f90e2f58e2ca3537a7d17e1e74e21}} 
+\index{Ghost@{Ghost}!setRandomDirection@{setRandomDirection}}
+\index{setRandomDirection@{setRandomDirection}!Ghost@{Ghost}}
+\doxysubsubsection{\texorpdfstring{setRandomDirection()}{setRandomDirection()}}
+{\footnotesize\ttfamily void Ghost\+::set\+Random\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+metoda losuje kierunek poruszania się \mbox{\Hypertarget{classGhost_a0b525455b66569b1b77348569af05775}\label{classGhost_a0b525455b66569b1b77348569af05775}} 
+\index{Ghost@{Ghost}!teleportTo@{teleportTo}}
+\index{teleportTo@{teleportTo}!Ghost@{Ghost}}
+\doxysubsubsection{\texorpdfstring{teleportTo()}{teleportTo()}}
+{\footnotesize\ttfamily virtual void Ghost\+::teleport\+To (\begin{DoxyParamCaption}\item[{const sf\+::\+Vector2f \&}]{\+\_\+velocity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+metoda konieczna aby zachować hierarchię klas 
+
+Reimplementowana w \mbox{\hyperlink{classGhostSprigginia_a2b197be6a24a98d756424936d49ac2d5}{Ghost\+Sprigginia}}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+header/\mbox{\hyperlink{ghost_8h}{ghost.\+h}}\end{DoxyCompactItemize}

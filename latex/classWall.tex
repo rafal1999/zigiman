@@ -1,0 +1,56 @@
+\hypertarget{classWall}{}\doxysection{Dokumentacja klasy Wall}
+\label{classWall}\index{Wall@{Wall}}
+Diagram dziedziczenia dla Wall\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classWall}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWall_a60794e5dfbd16f7a650c92bc843763e9}{Wall}} (const sf\+::\+Texture \&\+\_\+texture, const sf\+::\+Vector2f \&\+\_\+position)
+\item 
+void \mbox{\hyperlink{classWall_a16131b1241d53cc546e517ccbc5f994b}{draw}} (sf\+::\+Render\+Window \&\+\_\+window) const
+\item 
+virtual bool \mbox{\hyperlink{classWall_a999a09a686c00e7f3243c8547af75ac3}{check\+Collision}} (const \mbox{\hyperlink{classCharacter}{Character}} \&\+\_\+character)
+\end{DoxyCompactItemize}
+\doxysubsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{classWall_a60794e5dfbd16f7a650c92bc843763e9}\label{classWall_a60794e5dfbd16f7a650c92bc843763e9}} 
+\index{Wall@{Wall}!Wall@{Wall}}
+\index{Wall@{Wall}!Wall@{Wall}}
+\doxysubsubsection{\texorpdfstring{Wall()}{Wall()}}
+{\footnotesize\ttfamily Wall\+::\+Wall (\begin{DoxyParamCaption}\item[{const sf\+::\+Texture \&}]{\+\_\+texture,  }\item[{const sf\+::\+Vector2f \&}]{\+\_\+position }\end{DoxyParamCaption})}
+
+kontruktor ustawiający ścianę 
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{classWall_a999a09a686c00e7f3243c8547af75ac3}\label{classWall_a999a09a686c00e7f3243c8547af75ac3}} 
+\index{Wall@{Wall}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!Wall@{Wall}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}}
+{\footnotesize\ttfamily virtual bool Wall\+::check\+Collision (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCharacter}{Character}} \&}]{\+\_\+character }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+sprawdza czy wystąpiła kolizja z ścianą \mbox{\Hypertarget{classWall_a16131b1241d53cc546e517ccbc5f994b}\label{classWall_a16131b1241d53cc546e517ccbc5f994b}} 
+\index{Wall@{Wall}!draw@{draw}}
+\index{draw@{draw}!Wall@{Wall}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Wall\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{\+\_\+window }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+metoda rysuje sprite w oknie 
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in,out}}  & {\em \+\_\+window} & okno w którym ma być rysowany sprite \\
+\hline
+\end{DoxyParams}
+
+
+Reimplementowana z \mbox{\hyperlink{classObj_a727315a175246cdd35989abb0dfae724}{Obj}}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+header/\mbox{\hyperlink{wall_8h}{wall.\+h}}\end{DoxyCompactItemize}
