@@ -8,11 +8,11 @@ debug=#-g
 headery= -I header
 .PHONY: clean
 
-all : main
-	./main
+all : zigiman
+	./zigiman
 
 
-main : bin/obj.o bin/wall.o bin/character.o bin/pacman.o bin/ghost.o bin/points.o  bin/game.o bin/main.o
+zigiman : bin/obj.o bin/wall.o bin/character.o bin/pacman.o bin/ghost.o bin/points.o  bin/game.o bin/main.o
 	$(kompilator) $(headery)  $(standard) $(debug) $(optymalizacja) $(errors)  -o $@ $^   $(grafika)
 
 bin/main.o : src/main.cpp
@@ -45,11 +45,8 @@ bin/game.o : src/game.cpp
 
 
 clean :
-	for f in `ls *.o` ; do  if [ -f $$f ] ; then rm $$f  ; fi;   done;
-	if [ -f main ] ; then rm main ; fi ;
-	if [ -d html ] ; then rm -r html; fi ;
-	rm bin/*.o;
-
+	rm bin/*.o
+	rm zigiman
 
 d : doxy
 	firefox html/index.html
